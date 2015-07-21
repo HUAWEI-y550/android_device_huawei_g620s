@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2015 Rudolf Tammekivi
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,3 +24,9 @@ endif
 $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
 	ln -sf /data/misc/wifi/WCNSS_qcom_cfg.ini \
 		$(TARGET_OUT)/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini)
+
+# Create symlink spn-conf.xml which points to selective-spn-conf.xml
+# since Huawei's modem does not pull in network operator names
+$(shell mkdir -p $(TARGET_OUT)/etc; \
+	ln -sf /system/etc/selective-spn-conf.xml \
+		$(TARGET_OUT)/etc/spn-conf.xml)
