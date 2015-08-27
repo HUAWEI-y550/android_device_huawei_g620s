@@ -30,3 +30,6 @@ PRODUCT_PACKAGES += \
 	init.qcom.usb.rc \
 	init.target.rc \
 	ueventd.qcom.rc
+
+# Include proprietary
+$(call inherit-product, vendor/huawei/g620s/g620s-vendor.mk)
