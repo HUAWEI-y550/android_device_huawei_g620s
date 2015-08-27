@@ -49,5 +49,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET := 0x02000000
 
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/g620s/mkbootimg.mk
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/huawei/g620s/rootdir/etc/fstab.qcom
