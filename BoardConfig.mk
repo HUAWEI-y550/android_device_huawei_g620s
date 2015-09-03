@@ -53,3 +53,9 @@ BOARD_CUSTOM_BOOTIMG_MK := device/huawei/g620s/mkbootimg.mk
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/huawei/g620s/rootdir/etc/fstab.qcom
+
+# Graphics
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+TARGET_USES_C2D_COMPOSITION := true
+TARGET_USES_ION := true
+USE_OPENGL_RENDERER := true

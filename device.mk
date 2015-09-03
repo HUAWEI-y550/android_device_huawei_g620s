@@ -25,6 +25,21 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Graphics
+PRODUCT_PACKAGES += \
+	copybit.msm8916 \
+	gralloc.msm8916 \
+	hwcomposer.msm8916 \
+	memtrack.msm8916
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	debug.egl.hw=1 \
+	debug.sf.hw=1 \
+	debug.mdpcomp.logs=0 \
+	persist.hwc.mdpcomp.enable=true \
+	ro.opengles.version=196608 \
+	ro.sf.lcd_density=320
+
 # Init
 PRODUCT_PACKAGES += \
 	fstab.qcom \
