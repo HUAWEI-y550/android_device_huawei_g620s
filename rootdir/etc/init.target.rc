@@ -62,6 +62,7 @@ on post-fs-data
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
     mkdir /data/misc/dts 0770 media audio
+
 #start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
@@ -74,7 +75,7 @@ on property:ro.config.zram=true
     write /proc/sys/vm/swappiness 100
 
 on init
-   write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
+    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
 #enable zram
 on property:ro.config.zram=true
@@ -88,56 +89,47 @@ on property:persist.usb.chgdisabled=0
     write /sys/class/power_supply/battery/charging_enabled 1
 
 service qrngd /system/bin/qrngd -f
-   class main
-   user root
-   group root
+    class main
+    user root
+    group root
 
 service qrngp /system/bin/qrngp -f
-   class main
-   user root
-   group root
-   oneshot
-   disabled
+    class main
+    user root
+    group root
+    oneshot
+    disabled
 
 on property:sys.boot_completed=1
-   start qrngp
+    start qrngp
 
 service qseecomd /system/bin/qseecomd
-   class core
-   user root
-   group root
-
-#service aostlmd /system/bin/aostlmd
-#   class late_start
-#   user system
-#   group system net_raw
-
-#service mpdecision /system/bin/mpdecision --avg_comp
-#   user root
-#   disabled
+    class core
+    user root
+    group root
 
 service perfd /system/bin/perfd
-   class main
-   user root
-   disabled
+    class main
+    user root
+    disabled
 
 service thermal-engine /system/bin/thermal-engine
-   class main
-   user root
-   socket thermal-send-client stream 0666 system system
-   socket thermal-recv-client stream 0660 system system
-   socket thermal-recv-passive-client stream 0666 system system
-   group root
+    class main
+    user root
+    socket thermal-send-client stream 0666 system system
+    socket thermal-recv-client stream 0660 system system
+    socket thermal-recv-passive-client stream 0666 system system
+    group root
 
 service time_daemon /system/bin/time_daemon
-   class late_start
-   user root
-   group root
+    class late_start
+    user root
+    group root
 
 service audiod /system/bin/audiod
-   class late_start
-   user system
-   group system
+    class late_start
+    user system
+    group system
 
 on boot
     start rmt_storage
@@ -199,30 +191,30 @@ on property:sys.ims.QMI_DAEMON_STATUS=1
     start imsdatadaemon
 
 service ims_rtp_daemon /system/bin/ims_rtp_daemon
-   class main
-   user system
-   socket ims_rtpd stream 0660 system radio
-   group radio net_raw diag qcom_diag log
-   disabled
+    class main
+    user system
+    socket ims_rtpd stream 0660 system radio
+    group radio net_raw diag qcom_diag log
+    disabled
 
 service imscmservice /system/bin/imscmservice
-   class main
-   user system
-   group radio net_raw diag qcom_diag log
-   disabled
+    class main
+    user system
+    group radio net_raw diag qcom_diag log
+    disabled
 
 on property:sys.ims.DATA_DAEMON_STATUS=1
     start ims_rtp_daemon
     start imscmservice
 
 service hbtp /system/vendor/bin/hbtp_daemon
-   class main
-   user system
-   group system
-   disabled
+    class main
+    user system
+    group system
+    disabled
 
 service dts_configurator /system/bin/dts_configurator
-   class main
-   user system
-   group system
-   oneshot
+    class main
+    user system
+    group system
+    oneshot
