@@ -22,3 +22,11 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+# Init
+PRODUCT_PACKAGES += \
+	fstab.qcom \
+	init.qcom.rc \
+	init.qcom.usb.rc \
+	init.target.rc \
+	ueventd.qcom.rc
