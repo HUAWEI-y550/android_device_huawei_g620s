@@ -51,6 +51,12 @@ BOARD_RAMDISK_OFFSET := 0x02000000
 
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/g620s/mkbootimg.mk
 
+# Kernel inline build
+TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
+TARGET_KERNEL_CONFIG := g620s_defconfig
+TARGET_VARIANT_CONFIG := g620s_defconfig
+TARGET_SELINUX_CONFIG := g620s_defconfig
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/huawei/g620s/rootdir/etc/fstab.qcom
 
