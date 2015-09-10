@@ -70,6 +70,9 @@ USE_OPENGL_RENDERER := true
 BOARD_USES_ALSA_AUDIO := true
 COMMON_GLOBAL_CFLAGS += -DHUAWEI_SOUND_PARAM_PATH=\"/system/etc/sound_param/g620s_l01l02\"
 
+# Libc extensions
+BOARD_PROVIDES_ADDITIONAL_BIONIC_STATIC_LIBS += libc_huawei_symbols
+
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
