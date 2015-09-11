@@ -49,5 +49,9 @@ PRODUCT_PACKAGES += \
 	init.target.rc \
 	ueventd.qcom.rc
 
+# USB OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.isUsbOtgEnabled=1
+
 # Include proprietary
 $(call inherit-product, vendor/huawei/g620s/g620s-vendor.mk)

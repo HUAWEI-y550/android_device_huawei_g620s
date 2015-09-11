@@ -35,15 +35,6 @@ on early-init
     symlink /data/tombstones /tombstones
 
 on fs
-    mount_all fstab.qcom
-
-    # Keeping following partitions outside fstab file. As user may not have
-    # these partition flashed on the device. Failure to mount any partition in fstab file
-    # results in failure to launch late-start class.
-
-    wait /dev/block/bootdevice/by-name/cache
-    mount ext4 /dev/block/bootdevice/by-name/cache /cache nosuid nodev barrier=1
-
     wait /dev/block/bootdevice/by-name/persist
     mount ext4 /dev/block/bootdevice/by-name/persist /persist nosuid nodev barrier=1
     mkdir /persist/data 0700  system system
@@ -69,17 +60,8 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
-#enable zram
-on property:ro.config.zram=true
-    swapon_all fstab.qcom
-    write /proc/sys/vm/swappiness 100
-
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
-#enable zram
-on property:ro.config.zram=true
-    swapon_all fstab.qcom
 
 # Allow usb charging to be disabled peristently
 on property:persist.usb.chgdisabled=1
