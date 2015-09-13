@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 Rudolf Tammekivi
+# Copyright (C) 2015  Rudolf Tammekivi
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,23 +14,12 @@
 # limitations under the License.
 #
 
-# The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_eu_supl.mk)
+on boot
+    chown root system /sys/class/power_supply/bms/current_now
+    chown root system /sys/class/power_supply/bms/voltage_ocv
+    chmod 0664 /sys/class/power_supply/bms/current_now
+    chmod 0664 /sys/class/power_supply/bms/voltage_ocv
 
-# Use standard dalvik heap sizes
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
-# Init
-PRODUCT_PACKAGES += \
-	fstab.qcom \
-	init.recovery.qcom.rc \
-	init.qcom.rc \
-	init.qcom.usb.rc \
-	init.target.rc \
-	ueventd.qcom.rc
-
-# Include proprietary
-$(call inherit-product, vendor/huawei/g620s/g620s-vendor.mk)
+service vm_bms /sbin/vm_bms
+    user root
+    group root
