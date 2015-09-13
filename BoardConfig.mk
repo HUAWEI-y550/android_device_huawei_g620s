@@ -69,5 +69,8 @@ USE_OPENGL_RENDERER := true
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
+# Vold
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
