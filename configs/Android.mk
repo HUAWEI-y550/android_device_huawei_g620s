@@ -26,6 +26,14 @@ LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE		:= media_codecs.xml
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= media_codecs.xml
+LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE		:= mixer_paths_qrd_skuh.xml
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= ETC

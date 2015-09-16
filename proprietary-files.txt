@@ -24,3 +24,27 @@ system/vendor/lib/libscale.so
 # Graphics firmware
 system/etc/firmware/a300_pfp.fw
 system/etc/firmware/a300_pm4.fw
+
+# Media libraries
+system/lib/libOmxAacEnc.so
+system/lib/libOmxAmrEnc.so
+system/lib/libOmxEvrcEnc.so
+system/lib/libOmxQcelp13Enc.so
+system/lib/libOmxVdecHevc.so
+system/vendor/lib/libFileMux.so
+system/vendor/lib/libHevcSwDecoder.so
+system/vendor/lib/libmmosal.so
+system/vendor/lib/libOmxAacDec.so
+system/vendor/lib/libOmxEvrcDec.so
+system/vendor/lib/libOmxMux.so
+system/vendor/lib/libOmxQcelp13Dec.so
+system/vendor/lib/libwfdcommonutils.so
+
+# Media firmware
+system/etc/firmware/venus.b00
+system/etc/firmware/venus.b01
+system/etc/firmware/venus.b02
+system/etc/firmware/venus.b03
+system/etc/firmware/venus.b04
+system/etc/firmware/venus.mbn
+system/etc/firmware/venus.mdt

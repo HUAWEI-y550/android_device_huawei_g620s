@@ -63,6 +63,21 @@ PRODUCT_PACKAGES += \
 	init.target.rc \
 	ueventd.qcom.rc
 
+# Media
+PRODUCT_COPY_FILES += \
+	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+
+PRODUCT_PACKAGES += \
+	libdivxdrmdecrypt \
+	libmm-omxcore
+	libOmxCore \
+	libOmxVdec \
+	libOmxVenc \
+	libstagefrighthw \
+	media_codecs.xml \
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
