@@ -453,6 +453,31 @@ service rmt_storage /system/bin/rmt_storage
     class core
     user root
 
+service rmt_oeminfo /system/bin/rmt_oeminfo
+    class core
+    user root
+
+service libqmi_oem_main /system/bin/libqmi_oem_main
+    class core
+    user root
+
+service test_diag /system/bin/test_diag
+    class core
+    user root
+
+service oeminfo_server /system/bin/oeminfo_server
+    class core
+    user root
+
+service oem_sar_main /system/bin/oem_sar_main
+    class core
+    user root
+
+service callife /system/bin/callife
+    class core
+    user system
+    group system
+
 service rfs_access /system/bin/rfs_access
    class core
    user root

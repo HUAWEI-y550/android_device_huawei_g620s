@@ -4,6 +4,16 @@ recovery/root/sbin/vm_bms
 # RMT storage daemon
 system/bin/rmt_storage
 
+# Huawei extra
+system/bin/libqmi_oem_main
+system/bin/rmt_oeminfo
+system/bin/test_diag
+system/bin/oeminfo_server
+system/bin/oem_sar_main
+system/bin/callife
+
+system/lib/liboeminfo.so
+
 # Graphics
 system/vendor/lib/egl/eglsubAndroid.so
 system/vendor/lib/egl/libEGL_adreno.so
