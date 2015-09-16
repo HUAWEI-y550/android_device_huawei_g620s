@@ -25,6 +25,20 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Audio
+PRODUCT_PACKAGES += \
+	audio_policy.conf \
+	mixer_paths_qrd_skuh.xml \
+	audio.a2dp.default \
+	audio.primary.msm8916 \
+	audio.r_submix.default \
+	audio.usb.default
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	audio.offload.buffer.size.kb=64 \
+	audio.offload.min.duration.secs=30 \
+	av.offload.enable=true
+
 # Graphics
 PRODUCT_PACKAGES += \
 	copybit.msm8916 \
