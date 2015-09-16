@@ -39,6 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	audio.offload.min.duration.secs=30 \
 	av.offload.enable=true
 
+# Charger
+PRODUCT_PACKAGES += \
+	charger_res_images
+
 # Graphics
 PRODUCT_PACKAGES += \
 	copybit.msm8916 \
