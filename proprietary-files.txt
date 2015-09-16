@@ -1,6 +1,9 @@
 # Battery daemon (recovery)
 recovery/root/sbin/vm_bms
 
+# RMT storage daemon
+system/bin/rmt_storage
+
 # Graphics
 system/vendor/lib/egl/eglsubAndroid.so
 system/vendor/lib/egl/libEGL_adreno.so
