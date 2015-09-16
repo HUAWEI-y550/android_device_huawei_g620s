@@ -47,6 +47,14 @@ on init
     export EMULATED_STORAGE_TARGET /storage/emulated
     export SECONDARY_STORAGE /storage/sdcard1
 
+    # Support legacy paths
+    symlink /storage/emulated/legacy /sdcard
+    symlink /storage/emulated/legacy /mnt/sdcard
+    symlink /storage/emulated/legacy /storage/sdcard0
+    symlink /mnt/shell/emulated/0 /storage/emulated/legacy
+    symlink /storage/usbdisk0 /usbdisk
+    symlink /storage/usbdisk0 /mnt/usbdisk
+
 on fs
     mount_all /fstab.qcom
     swapon_all /fstab.qcom
