@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
 	init.target.rc \
 	ueventd.qcom.rc
 
+# Permissions
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
