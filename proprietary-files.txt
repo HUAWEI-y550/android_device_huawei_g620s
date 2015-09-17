@@ -1,6 +1,9 @@
 # Battery daemon (recovery)
 recovery/root/sbin/vm_bms
 
+# Battery daemon
+system/bin/vm_bms
+
 # RMT storage daemon
 system/bin/rmt_storage
 
