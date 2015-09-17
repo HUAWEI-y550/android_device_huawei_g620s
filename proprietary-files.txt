@@ -7,6 +7,12 @@ system/etc/sound_param/g620s_l01l02/Global_cal.acdb
 system/etc/sound_param/g620s_l01l02/General_cal.acdb
 system/etc/sound_param/g620s_l01l02/Bluetooth_cal.acdb
 
+# Audio
+system/vendor/lib/libacdbloader.so
+system/vendor/lib/libaudcal.so
+system/vendor/lib/libacdbrtac.so
+system/vendor/lib/libadiertac.so
+
 # Battery daemon (recovery)
 recovery/root/sbin/vm_bms
 
