@@ -1,3 +1,12 @@
+# Audio ACDB
+system/etc/sound_param/g620s_l01l02/Speaker_cal.acdb
+system/etc/sound_param/g620s_l01l02/Headset_cal.acdb
+system/etc/sound_param/g620s_l01l02/Hdmi_cal.acdb
+system/etc/sound_param/g620s_l01l02/Handset_cal.acdb
+system/etc/sound_param/g620s_l01l02/Global_cal.acdb
+system/etc/sound_param/g620s_l01l02/General_cal.acdb
+system/etc/sound_param/g620s_l01l02/Bluetooth_cal.acdb
+
 # Battery daemon (recovery)
 recovery/root/sbin/vm_bms
 
