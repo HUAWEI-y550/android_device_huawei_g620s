@@ -86,6 +86,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# RIL
+PRODUCT_PACKAGES += \
+	libxml2
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.radio.apm_sim_not_pwdn=1 \
+	persist.radio.force_nw_search=1 \
+	persist.radio.use_nv_force=false \
+	persist.radio.rat_on=combine \
+	persist.radio.no_wait_for_card=1 \
+	rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+	rild.libargs=-d/dev/smd0
+
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
