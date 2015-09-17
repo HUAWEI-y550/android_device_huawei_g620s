@@ -64,3 +64,35 @@ system/etc/firmware/venus.b03
 system/etc/firmware/venus.b04
 system/etc/firmware/venus.mbn
 system/etc/firmware/venus.mdt
+
+# RIL
+system/bin/netmgrd
+system/bin/qmuxd
+system/lib/liboeminfo_oem_api.so
+system/lib/libqmi_nv_api.so
+system/lib/libqmi_oem_api.so
+system/lib/librmnetctl.so
+system/vendor/lib/libconfigdb.so
+system/vendor/lib/libdiag.so
+system/vendor/lib/libdsi_netctrl.so
+system/vendor/lib/libdsnetutils.so
+system/vendor/lib/libdsutils.so
+system/vendor/lib/libidl.so
+system/vendor/lib/libmdmdetect.so
+system/vendor/lib/libnetmgr.so
+system/vendor/lib/libqdi.so
+system/vendor/lib/libqdp.so
+system/vendor/lib/libqmi.so
+system/vendor/lib/libqmiservices.so
+system/vendor/lib/libqmi_cci.so
+system/vendor/lib/libqmi_client_qmux.so
+system/vendor/lib/libqmi_common_so.so
+system/vendor/lib/libqmi_encdec.so
+system/vendor/lib/libril-qc-qmi-1.so
+system/vendor/lib/libril-qcril-hook-oem.so
+system/vendor/lib/libtime_genoff.so
+system/vendor/lib/libxml.so
+
+# RIL prebuilt
+system/bin/rild
+system/lib/libril.so
