@@ -125,5 +125,16 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.isUsbOtgEnabled=1
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+	hostapd \
+	WCNSS_cfg.dat \
+	WCNSS_qcom_cfg.ini \
+	WCNSS_qcom_wlan_nv.bin \
+	wcnss_service \
+	wpa_supplicant \
+	wpa_supplicant.conf \
+	wpa_supplicant_overlay.conf
+
 # Include proprietary
 $(call inherit-product, vendor/huawei/g620s/g620s-vendor.mk)

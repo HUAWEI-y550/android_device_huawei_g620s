@@ -18,33 +18,25 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= audio_policy.conf
+LOCAL_MODULE		:= WCNSS_cfg.dat
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= audio_policy.conf
-LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)
+LOCAL_SRC_FILES		:= WCNSS_cfg.dat
+LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)/firmware/wlan/prima
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= media_codecs.xml
+LOCAL_MODULE		:= WCNSS_qcom_cfg.ini
 LOCAL_MODULE_TAGS	:= optional
 LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= media_codecs.xml
-LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE		:= mixer_paths_qrd_skuh.xml
-LOCAL_MODULE_TAGS	:= optional
-LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= mixer_paths_qrd_skuh.xml
-LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE		:= wpa_supplicant_overlay.conf
-LOCAL_MODULE_TAGS	:= optional
-LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= wpa_supplicant_overlay.conf
+LOCAL_SRC_FILES		:= WCNSS_qcom_cfg.ini
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)/wifi
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= WCNSS_qcom_wlan_nv.bin
+LOCAL_MODULE_TAGS	:= optional
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= WCNSS_qcom_wlan_nv.bin
+LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)/firmware/wlan/prima
 include $(BUILD_PREBUILT)
