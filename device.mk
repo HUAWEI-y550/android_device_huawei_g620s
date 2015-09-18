@@ -67,6 +67,10 @@ PRODUCT_PACKAGES += \
 	init.target.rc \
 	ueventd.qcom.rc
 
+# Lights
+PRODUCT_PACKAGES += \
+	lights.msm8916
+
 # Media
 PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
