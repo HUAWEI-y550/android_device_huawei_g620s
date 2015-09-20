@@ -80,6 +80,15 @@ system/etc/firmware/venus.b04
 system/etc/firmware/venus.mbn
 system/etc/firmware/venus.mdt
 
+# NFC
+system/app/NfcDNci/NfcDNci.apk
+system/etc/firmware/nfc_test.bin
+system/framework/com.android.nfc.helper.jar
+system/framework/com.android.qcom.nfc_extras.jar
+system/vendor/lib/hw/nfc_nci.msm8916.so
+system/vendor/lib/libnfcD-nci.so
+system/vendor/lib/libnfcD_nci_jni.so
+
 # RIL
 system/bin/netmgrd
 system/bin/qmuxd
