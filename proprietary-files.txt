@@ -120,3 +120,7 @@ system/vendor/lib/libxml.so
 # RIL prebuilt
 system/bin/rild
 system/lib/libril.so
+
+# Thermal engine
+system/bin/thermal-engine
+system/vendor/lib/libthermalioctl.so
