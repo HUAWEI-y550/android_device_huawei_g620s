@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
 	fstab.qcom \
 	init.recovery.qcom.rc \
 	init.qcom.rc \
+	init.qcom.power.rc \
 	init.qcom.usb.rc \
 	init.target.rc \
 	ueventd.qcom.rc
