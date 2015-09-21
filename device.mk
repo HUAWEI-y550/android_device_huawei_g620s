@@ -43,6 +43,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
 	charger_res_images
 
+# FM
+PRODUCT_PACKAGES += \
+	FM2 \
+	FMRecord \
+	libqcomfm_jni \
+	qcom.fmradio
+
 # Graphics
 PRODUCT_PACKAGES += \
 	copybit.msm8916 \
