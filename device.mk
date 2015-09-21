@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
 	init.target.rc \
 	ueventd.qcom.rc
 
+# IPC Security Conf
+PRODUCT_PACKAGES += \
+	sec_config
+
 # Lights
 PRODUCT_PACKAGES += \
 	lights.msm8916

@@ -89,6 +89,9 @@ system/vendor/lib/hw/nfc_nci.msm8916.so
 system/vendor/lib/libnfcD-nci.so
 system/vendor/lib/libnfcD_nci_jni.so
 
+# IPC Security Conf
+system/bin/irsc_util
+
 # RIL
 system/bin/netmgrd
 system/bin/qmuxd
