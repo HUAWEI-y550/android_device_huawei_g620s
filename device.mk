@@ -126,6 +126,7 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+	liboeminfo_oem_api \
 	libxml2
 
 PRODUCT_PROPERTY_OVERRIDES += \

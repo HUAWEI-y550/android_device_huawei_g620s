@@ -95,7 +95,6 @@ system/bin/irsc_util
 # RIL
 system/bin/netmgrd
 system/bin/qmuxd
-system/lib/liboeminfo_oem_api.so
 system/lib/libqmi_nv_api.so
 system/lib/libqmi_oem_api.so
 system/lib/librmnetctl.so
