@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
+# Power
+PRODUCT_PACKAGES += \
+	power.msm8916
+
 # RIL
 PRODUCT_PACKAGES += \
 	liboeminfo_oem_api \
