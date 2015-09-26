@@ -126,3 +126,7 @@ system/lib/libril.so
 # Thermal engine
 system/bin/thermal-engine
 system/vendor/lib/libthermalioctl.so
+
+# Perfd
+system/bin/perfd
+system/vendor/lib/libthermalclient.so
