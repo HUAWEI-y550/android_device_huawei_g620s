@@ -120,3 +120,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Additional headers
 TARGET_SPECIFIC_HEADER_PATH := device/huawei/g620s/include
+
+# Malloc
+MALLOC_IMPL := dlmalloc
