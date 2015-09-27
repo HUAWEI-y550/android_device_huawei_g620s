@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
 	libdivxdrmdecrypt \
-	libmm-omxcore
+	libmm-omxcore \
 	libOmxCore \
 	libOmxVdec \
 	libOmxVenc \
