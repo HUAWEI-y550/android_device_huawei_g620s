@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    	com.android.future.usb.accessory \
 	persist.sys.usb.config=mtp
 
 # USB OTG

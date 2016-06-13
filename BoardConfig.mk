@@ -106,6 +106,8 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
+BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
+BOARD_VOLD_MAX_PARTITIONS := 40
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
