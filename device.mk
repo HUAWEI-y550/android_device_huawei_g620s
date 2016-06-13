@@ -70,7 +70,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.mdpcomp.logs=0 \
 	persist.hwc.mdpcomp.enable=true \
 	ro.opengles.version=196608 \
-	ro.sf.lcd_density=320
+	ro.sf.lcd_density=240
 
 # Init
 PRODUCT_PACKAGES += \
