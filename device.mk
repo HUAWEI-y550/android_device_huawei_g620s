@@ -102,8 +102,13 @@ PRODUCT_PACKAGES += \
 	libOmxCore \
 	libOmxVdec \
 	libOmxVenc \
+	libOmxAacEnc \
+	libOmxAmrEnc \
+	libOmxEvrcEnc \
+    	libOmxQcelp13Enc \
+	libOmxVdecHevc \
 	libstagefrighthw \
-	media_codecs.xml \
+	media_codecs.xml
 
 # NFC
 PRODUCT_BOOT_JARS += \
@@ -145,6 +150,7 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
 	liboeminfo_oem_api \
+	libbson \
 	libxml2
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -173,6 +179,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
+	libqsap_sdk \
+	libQWiFiSoftApCfg \
+	libwpa_client \
 	hostapd \
 	WCNSS_cfg.dat \
 	WCNSS_qcom_cfg.ini \
@@ -181,6 +190,12 @@ PRODUCT_PACKAGES += \
 	wpa_supplicant \
 	wpa_supplicant.conf \
 	wpa_supplicant_overlay.conf
+
+# Ebtables
+PRODUCT_PACKAGES += \
+	ebtables \
+	ethertypes \
+	libebtc
 
 # Include proprietary
 $(call inherit-product, vendor/huawei/g620s/g620s-vendor.mk)
